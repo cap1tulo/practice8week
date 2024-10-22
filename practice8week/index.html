@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM Practice</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">DOM Practice</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#" onclick="runTask(1)">Task 1</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" onclick="runTask(2)">Task 2</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" onclick="runTask(3)">Task 3</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" onclick="runTask(4)">Task 4</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" onclick="runTask(5)">Task 5</a></li>
+            </ul>
+        </div>
+        <button class="btn btn-danger ms-auto" id="restartButton" onclick="restart()">Restart</button>
+    </div>
+</nav>
+
+<!-- Container for paragraph and result display -->
+<div class="container mt-4">
+    <h1>JavaScript DOM Practice</h1>
+    <p id="paragraph">
+        Does she need to be an empathetic leader? Ask about that. Does she need to take your company public?
+        Ask about that. If you're the candidate, talk about why you took certain jobs. Explain why you left.
+        Explain why you chose a certain school. Share why you decided to go to grad school. Discuss why you took
+        a year off to backpack through Europe, and what you got out of the experience. What are your biggest
+        weaknesses? Every candidate knows how to answer this question: Just pick a theoretical weakness and magically
+        transform that flaw into a strength in disguise! For example: "My biggest weakness is getting so absorbed
+        in my work that I lose all track of time. Every day I look up and realize everyone has gone home! I know I
+        should be more aware of the clock, but when I love what I'm doing I just can't think of anything else."
+    </p>
+    <p id="wordCount"></p>
+    <div id="taskResult"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
